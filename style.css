@@ -33,6 +33,10 @@ nav img {
 img {
   cursor: pointer;
 }
+.card-img img,
+.card-img video {
+  width: 100%;
+}
 .card-top {
   margin: 10px 0px 10px 0px;
   padding: 5px 15px;
@@ -76,11 +80,16 @@ img {
 .card-bottom {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
   padding: 0px 15px;
   margin-bottom: 10px;
 }
+/* svg {
+  width: 23px;
+  height: 22px;
+} */
 .icons {
+  margin-top: 10px;
   width: 104px;
   height: 22px;
   display: flex;
@@ -101,4 +110,13 @@ img {
   margin-right: 5px;
   font-weight: 600;
   font-size: 15px;
+}
+@media only screen and (max-width: 550px) {
+  .continair {
+    width: 100%;
+  }
+  .card-img img,
+  .card-img video {
+    width: 100%;
+  }
 }

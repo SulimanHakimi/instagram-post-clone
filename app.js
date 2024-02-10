@@ -6,7 +6,7 @@ let cardData = [
     likeCount: 144559,
     isVerified: true,
     isImg: true,
-    vedioLink: "",
+    videoLink: "",
     userProfile: "./images/sulimanProfile.jpg",
     userPostImg: "./images/suliman1-post.PNG",
     postDes: "Iam not profect but 🙂",
@@ -17,7 +17,7 @@ let cardData = [
     userLocation: "Kabul, Afghanistan",
     isVerified: true,
     isImg: false,
-    vedioLink: "./vedio/karimPost1.mp4",
+    videoLink: "./video/karimPost1.mp4",
     likeCount: 1099,
     userProfile:
       "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/392882387_1084264289607154_8081635667098258665_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=k-TPQ33JkDEAX8ZeL6b&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfD-rQ2YS6Co6ZHVQTP1OSeLGhXpSM5cG-i36GRYfwQXEw&oe=65CAA784",
@@ -29,7 +29,7 @@ let cardData = [
     userName: "Jamshid Hashimi",
     userLocation: "TalentLift, Canada",
     isImg: true,
-    vedioLink: "",
+    videoLink: "",
     isVerified: false,
     likeCount: 19,
     postDes: "wooow what a art guess the artist 😱",
@@ -43,7 +43,7 @@ let cardData = [
     userName: "Suliman Hakimi",
     userLocation: "Kabul, Afghanistan",
     isImg: false,
-    vedioLink: "./vedio/sulimanPost2.mp4",
+    videoLink: "./video/sulimanPost2.mp4",
     isVerified: true,
     likeCount: 19,
     userProfile: "./images/sulimanProfile.jpg",
@@ -51,7 +51,10 @@ let cardData = [
     postDes: "nothing to say!",
   },
 ];
-
+let isLiked = false
+function liked() {
+  return true
+}
 for (let i = 0; i < cardData.length; i++) {
   document.querySelector(".continair").innerHTML += `<div class="post-card">
 <div class="card-top">
@@ -79,25 +82,30 @@ for (let i = 0; i < cardData.length; i++) {
 <div class="card-img">${
     cardData[i].isImg
       ? ` <img
-width="375px"
 height="375px"
 src="${cardData[i].userPostImg}"
 alt=""
 />`
-      : `<video width="375" height="375" controls>
-<source src="${cardData[i].vedioLink}" type="video/mp4">
+      : `<video height="375" controls>
+<source src="${cardData[i].videoLink}" type="video/mp4">
 Your browser does not support the video tag.
 </video>`
   }
 </div>
 <div class="card-bottom">
   <div class="icons">
+    ${
+      isLiked
+        ? `<svg onclick="liked()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>`
+        : `<img onclick="liked()"
+      class="like"
+        width="23px"
+        height="22px"
+        src="./icons/heart.png"
+        alt=""
+      />`
+    }
     <img
-      width="23px"
-      height="22px"
-      src="./icons/heart.png"
-      alt=""
-    /><img
       width="23px"
       height="22px"
       src="./icons/chat.png"
