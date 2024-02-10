@@ -37,6 +37,9 @@ img {
 .card-img video {
   width: 100%;
 }
+i {
+  font-size: 25px;
+}
 .card-top {
   margin: 10px 0px 10px 0px;
   padding: 5px 15px;
@@ -84,10 +87,6 @@ img {
   padding: 0px 15px;
   margin-bottom: 10px;
 }
-/* svg {
-  width: 23px;
-  height: 22px;
-} */
 .icons {
   margin-top: 10px;
   width: 104px;
