@@ -20,14 +20,19 @@ body {
 }
 nav {
   height: 67px;
-  border-bottom: 1px solid #c6c6c6;
+  border-bottom: 2px solid #c6c6c6;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
   width: 100%;
 }
-
+nav img {
+  border-radius: 50%;
+}
+img {
+  cursor: pointer;
+}
 .card-top {
   padding: 20px 15px;
   height: 34px;
@@ -80,7 +85,16 @@ nav {
   gap: 15px;
   cursor: pointer;
 }
-.desc,
 .likes {
   font-size: 13px;
+}
+.desc {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.user-name {
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 15px;
 }
