@@ -122,9 +122,9 @@ Your browser does not support the video tag.
   }</p>
 </div>
 </div>`;
-}
-function liked(){
-{/* <i class=" fa-heart" onclick="liked()"></i> */}
-document.querySelector(".like").classList.toggle("fa-solid")
-
+  function liked() {
+    document.querySelectorAll(".like").forEach((likeBtn) => {
+      likeBtn.classList.toggle("fa-solid");
+    });
+  }
 }

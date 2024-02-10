@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 375px;
+  width: 400px;
   margin: 0px auto;
   background-color: white;
 }
@@ -54,7 +54,7 @@ i {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 10px solid #c6c6c6;
+  border-bottom: 5px solid #c6c6c6;
 }
 
 .card-top img {
@@ -83,7 +83,7 @@ i {
 .card-bottom {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   padding: 0px 15px;
   margin-bottom: 10px;
 }
@@ -118,4 +118,46 @@ i {
   .card-img video {
     width: 100%;
   }
+}
+
+.posting {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
+  justify-content: space-around;
+}
+.posting-top {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+.posting-top input {
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 350px;
+  color: #000000ec;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #65676b34;
+}
+.posting-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.posting-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+.posting-bottom span i {
+  font-size: 20px;
 }
