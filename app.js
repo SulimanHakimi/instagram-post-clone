@@ -62,18 +62,6 @@ let cardData = [
     imgLink: "./images/mujtabaPost1.jpg",
     postDes: "dont feel your useless",
   },
-  {
-    id: 5,
-    userName: "Mujtaba Nikzad",
-    userLocation: "Kabul, Afghanistan",
-    isImg: true,
-    videoLink: "",
-    isVerified: false,
-    likeCount: 2392,
-    userProfile: "./images/mujtabaProfile.jpeg",
-    imgLink: "",
-    postDes: "dont feel your useless",
-  },
 ];
 
 for (let i = 0; i < cardData.length; i++) {
