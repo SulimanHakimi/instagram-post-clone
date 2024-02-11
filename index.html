@@ -40,22 +40,29 @@
           <input type="text" placeholder="What's on your maind" />
         </div>
         <div class="posting-bottom">
-          <span
-            ><img
-              width="28px"
-              height="28px"
-              src="./icons/video-stream.png"
-              alt=""
-            />Live video</span
+          <label for="input-go-live" class="btn"
+            ><span
+              ><img
+                width="28px"
+                height="28px"
+                src="./icons/video-stream.png"
+                alt=""
+              />Live video</span
+            ></label
           >
-          <span
-            ><img
-              width="30px"
-              height="30px"
-              src="./icons/photos.png"
-              alt=""
-            />Photo/video</span
+          <input id="input-go-live" type="file" />
+          <label for="files"
+            ><span
+              ><img
+                width="30px"
+                height="30px"
+                src="./icons/photos.png"
+                alt=""
+              />Photo/video</span
+            ></label
           >
+          <input id="files" accept="video/*,image/*" type="file" />
+
           <span><i class="fa-regular fa-face-smile"></i>Feeling</span>
         </div>
       </div>

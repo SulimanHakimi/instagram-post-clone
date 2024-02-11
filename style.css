@@ -161,3 +161,8 @@ i {
 .posting-bottom span i {
   font-size: 20px;
 }
+
+#files,
+#input-go-live {
+  display: none;
+}
