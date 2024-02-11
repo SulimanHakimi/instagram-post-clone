@@ -51,7 +51,7 @@
             ></label
           >
           <input id="input-go-live" type="file" />
-          <label for="files"
+          <label for="files" class="iamgeUploadBtn"
             ><span
               ><img
                 width="30px"
@@ -63,10 +63,17 @@
           >
           <input id="files" accept="video/*,image/*" type="file" />
 
-          <span><i class="fa-regular fa-face-smile"></i>Feeling</span>
+          <span class="feeling"
+            ><i class="fa-regular fa-face-smile"></i>Feeling</span
+          >
         </div>
       </div>
     </div>
+    <img src="" id="img_url" alt="" />
+    <video height="375" controls>
+      <source id="vedio_url" src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
     <script src="./app.js"></script>
   </body>
 </html>
