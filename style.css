@@ -134,6 +134,7 @@ i {
   justify-content: space-evenly;
   align-items: center;
   padding-bottom: 15px;
+  margin: 0px 20px;
 }
 .posting-top img {
   border-radius: 50%;
@@ -242,6 +243,6 @@ main {
     gap: 5px;
   }
   .posting-top input {
-    width: 330px;
+    width: 300px;
   }
 }
