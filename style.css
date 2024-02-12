@@ -7,6 +7,7 @@
 }
 body {
   background-color: blueviolet;
+  user-select: none;
 }
 .continair {
   display: flex;
