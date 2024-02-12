@@ -138,14 +138,14 @@ i {
   padding-bottom: 10px;
 }
 .posting-top input {
-  padding: 10px 15px;
-  font-size: 16px;
-  width: 350px;
+  padding: 12px 20px;
+  font-size: 15px;
+  width: 370px;
   color: #000000ec;
   border-radius: 30px;
   border: none;
   outline: none;
-  background-color: #65676b34;
+  background-color: #65676b11;
 }
 .posting-bottom {
   display: flex;
