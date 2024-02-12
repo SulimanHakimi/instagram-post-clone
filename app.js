@@ -1,6 +1,19 @@
 let cardData = [
   {
     id: 1,
+    userName: "Karim Bakhsh Amiry",
+    userLocation: "Kabul, Afghanistan",
+    isVerified: true,
+    isImg: false,
+    likeCount: 1099,
+    videoLink: "./video/karimPost1.mp4",
+    userProfile:
+      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/392882387_1084264289607154_8081635667098258665_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=k-TPQ33JkDEAX8ZeL6b&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfD-rQ2YS6Co6ZHVQTP1OSeLGhXpSM5cG-i36GRYfwQXEw&oe=65CAA784",
+    userPostImg: "",
+    postDes: "رباعی زیبای از خیام 🥰",
+  },
+  {
+    id: 2,
     userName: "Suliman Hakimi",
     userLocation: "Kabul, Afghanistan",
     likeCount: 144559,
@@ -10,19 +23,6 @@ let cardData = [
     userProfile: "./images/sulimanProfile.jpg",
     userPostImg: "./images/suliman1-post.PNG",
     postDes: "Iam not profect but 🙂",
-  },
-  {
-    id: 2,
-    userName: "Karim Bakhsh Amiry",
-    userLocation: "Kabul, Afghanistan",
-    isVerified: true,
-    isImg: false,
-    videoLink: "./video/karimPost1.mp4",
-    likeCount: 1099,
-    userProfile:
-      "https://scontent.fkbl6-1.fna.fbcdn.net/v/t39.30808-6/392882387_1084264289607154_8081635667098258665_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_ohc=k-TPQ33JkDEAX8ZeL6b&_nc_ht=scontent.fkbl6-1.fna&oh=00_AfD-rQ2YS6Co6ZHVQTP1OSeLGhXpSM5cG-i36GRYfwQXEw&oe=65CAA784",
-    userPostImg: "",
-    postDes: "رباعی زیبای از خیام 🥰",
   },
   {
     id: 3,
