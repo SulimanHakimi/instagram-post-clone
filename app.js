@@ -62,18 +62,6 @@ let cardData = [
     userPostImg: "./images/mujtabaPost1.jpg",
     postDes: "dont feel your useless",
   },
-  {
-    id: 6,
-    userName: "Mujtaba Nikzad",
-    userLocation: "Kabul, Afghanistan",
-    isImg: true,
-    videoLink: "",
-    isVerified: false,
-    likeCount: 2392,
-    userProfile: "./images/mujtabaProfile.jpeg",
-    userPostImg: localStorage.getItem("imgUrl"),
-    postDes: "dont feel your useless",
-  },
 ];
 // ////////////////
 
