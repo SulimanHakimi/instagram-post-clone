@@ -230,7 +230,7 @@ main {
   border: none;
   background-color: #65676b11;
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 600px) {
   .continair {
     width: 100%;
   }
@@ -239,9 +239,9 @@ main {
     height: 100vh;
   }
   .posting-top {
-    gap: 15px;
+    gap: 5px;
   }
   .posting-top input {
-    width: 370px;
+    width: 330px;
   }
 }
