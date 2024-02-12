@@ -4,10 +4,11 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: "Source Sans 3", sans-serif;
+  user-select: none;
 }
 body {
   background-color: blueviolet;
-  user-select: none;
+  position: relative;
 }
 .continair {
   display: flex;
@@ -15,9 +16,14 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 400px;
   margin: 0px auto;
+  width: 400px;
   background-color: white;
+}
+.post-list {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
 }
 nav {
   height: 67px;
@@ -36,7 +42,7 @@ img {
 }
 .card-img img,
 .card-img video {
-  width: 100%;
+  width: 400px;
 }
 i {
   font-size: 25px;
@@ -51,7 +57,7 @@ i {
 }
 .post-card {
   height: fit-content;
-  width: 100%;
+  width: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -111,15 +117,6 @@ i {
   font-weight: 600;
   font-size: 15px;
 }
-@media only screen and (max-width: 550px) {
-  .continair {
-    width: 100%;
-  }
-  .card-img img,
-  .card-img video {
-    width: 100%;
-  }
-}
 
 .posting {
   height: fit-content;
@@ -166,4 +163,42 @@ i {
 #files,
 #input-go-live {
   display: none;
+}
+/* ///////////////////// */
+
+main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sidbar {
+  width: 400px;
+  background-color: white;
+  height: 88vh;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  flex-direction: column;
+  top: 5px;
+  margin: 60px auto;
+  padding: 10px 0px 20px 0px;
+}
+.link {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  height: 40px;
+  width: 90%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+@media only screen and (max-width: 550px) {
+  .continair {
+    width: 100%;
+  }
 }

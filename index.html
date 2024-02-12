@@ -33,7 +33,7 @@
     />
   </head>
   <body>
-    <div class="continair">
+    <div class="continair" id="continair">
       <nav>
         <svg
           width="127"
@@ -48,48 +48,59 @@
           />
         </svg>
         <img
+          class="nav-profile"
           width="38px"
           height="38px"
           src="./images/sulimanProfile.jpg"
           alt=""
         />
       </nav>
-      <div class="posting">
-        <div class="posting-top">
-          <input
-            id="postDescription"
-            type="text"
-            placeholder="What's on your maind"
-          />
-        </div>
-        <div class="posting-bottom">
-          <label for="input-go-live" class="btn"
-            ><span
-              ><img
-                width="28px"
-                height="28px"
-                src="./icons/video-stream.png"
-                alt=""
-              />Live video</span
-            ></label
-          >
-          <input id="input-go-live" type="file" />
-          <label for="files" class="iamgeUploadBtn"
-            ><span
-              ><img
-                width="30px"
-                height="30px"
-                src="./icons/photos.png"
-                alt=""
-              />Photo/video</span
-            ></label
-          >
-          <input id="files" accept="video/*,image/*" type="file" />
+      <main>
+        <div class="posting">
+          <div class="posting-top">
+            <input
+              id="postDescription"
+              type="text"
+              placeholder="What's on your maind"
+            />
+          </div>
+          <div class="posting-bottom">
+            <label for="input-go-live" class="btn"
+              ><span
+                ><img
+                  width="28px"
+                  height="28px"
+                  src="./icons/video-stream.png"
+                  alt=""
+                />Live video</span
+              ></label
+            >
+            <input id="input-go-live" type="file" />
+            <label for="files" class="iamgeUploadBtn"
+              ><span
+                ><img
+                  width="30px"
+                  height="30px"
+                  src="./icons/photos.png"
+                  alt=""
+                />Photo/video</span
+              ></label
+            >
+            <input id="files" accept="video/*,image/*" type="file" />
 
-          <span class="feeling"
-            ><i class="fa-regular fa-face-smile"></i>Feeling</span
-          >
+            <span class="feeling"
+              ><i class="fa-regular fa-face-smile"></i>Feeling</span
+            >
+          </div>
+          <div class="post-list"></div>
         </div>
+      </main>
+      <div class="sidbar hidden">
+        <div class="link text">Search</div>
+        <div class="link text" id="#continair">Home</div>
+        <div class="link text">Messages</div>
+        <div class="link text">Reels</div>
+        <div class="link text">Settings</div>
       </div>
     </div>
     <!-- <img src="" id="img_url" alt="" /> 

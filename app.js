@@ -108,7 +108,7 @@ let cardData = [
 
 // ///////////////
 for (let i = 0; i < cardData.length; i++) {
-  document.querySelector(".continair").innerHTML += `<div class="post-card">
+  document.querySelector(".post-list").innerHTML += `<div class="post-card">
 <div class="card-top">
   <img
     width="34px"
@@ -171,3 +171,18 @@ Your browser does not support the video tag.
     });
   }
 }
+
+let menu = document.querySelector(".nav-profile");
+let sidBar = document.querySelector(".sidbar");
+let postList = document.querySelector(".post-list");
+let links = document.querySelectorAll(".link");
+menu.addEventListener("click", () => {
+  sidBar.classList.toggle("hidden");
+  postList.classList.toggle("hidden");
+});
+links.forEach((link) => {
+  link.addEventListener("click", () => {
+    sidBar.classList.add("hidden");
+    postList.classList.remove("hidden");
+  });
+});
