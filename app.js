@@ -77,36 +77,34 @@ let cardData = [
 ];
 // ////////////////
 
-
-
 // ////////////////
-let dsecriptionData = document.getElementById("postDescription");
-let data3 = {
-  id: 7,
-  userName: "Nikzad Khan",
-  userLocation: "Kabul, Afghanistan",
-  isImg: true,
-  videoLink: "",
-  isVerified: true,
-  likeCount: 2392,
-  userProfile: "./images/mujtabaProfile.jpeg",
-  userPostImg: localStorage.getItem("imgUrl"),
-  postDes: dsecriptionData.value,
-};
-cardData.push(data3);
-document.getElementById("btn").addEventListener("click", () => {
-  alert();
-  console.log("hi");
-});
-const fileInput = document.querySelector("#files");
+// let dsecriptionData = document.getElementById("postDescription");
+// let data3 = {
+//   id: 7,
+//   userName: "Nikzad Khan",
+//   userLocation: "Kabul, Afghanistan",
+//   isImg: true,
+//   videoLink: "",
+//   isVerified: true,
+//   likeCount: 2392,
+//   userProfile: "./images/mujtabaProfile.jpeg",
+//   userPostImg: localStorage.getItem("imgUrl"),
+//   postDes: dsecriptionData.value,
+// };
+// cardData.push(data3);
+// document.getElementById("btn").addEventListener("click", () => {
+//   alert();
+//   console.log("hi");
+// });
+// const fileInput = document.querySelector("#files");
 
-fileInput.addEventListener("change", () => {
-  const reader = new FileReader();
-  reader.addEventListener("load", () => {
-    localStorage.setItem("imgUrl", reader.result);
-  });
-  reader.readAsDataURL(fileInput.files[0]);
-});
+// fileInput.addEventListener("change", () => {
+//   const reader = new FileReader();
+//   reader.addEventListener("load", () => {
+//     localStorage.setItem("imgUrl", reader.result);
+//   });
+//   reader.readAsDataURL(fileInput.files[0]);
+// });
 
 // ///////////////
 for (let i = 0; i < cardData.length; i++) {
