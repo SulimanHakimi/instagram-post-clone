@@ -1,3 +1,28 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyD80opEd6V1Bdm2yvcRdMUt5BiYchTT78M",
+  authDomain: "oldagramassets.firebaseapp.com",
+  projectId: "oldagramassets",
+  storageBucket: "oldagramassets.appspot.com",
+  messagingSenderId: "50065021681",
+  appId: "1:50065021681:web:d2578c65afa504a73be750",
+};
+firebase.initializeApp(firebaseConfig);
+function uploadImage() {
+  const ref = firebase.storage().ref();
+  const file = document.querySelector("#files").files[0];
+  const name = file.name;
+  const metadata = {
+    contentType: file.type,
+  };
+  const task = ref.child(name).put(file, metadata);
+  task
+    .then((snapshot) => snapshot.ref.getDownloadURL())
+    .then(() => {
+      alert("your image successfully uploded");
+    })
+    .catch(console.error);
+}
+
 let cardData = [
   {
     id: 1,
@@ -63,38 +88,7 @@ let cardData = [
     postDes: "dont feel your useless",
   },
 ];
-// ////////////////
 
-// ////////////////
-// let dsecriptionData = document.getElementById("postDescription");
-// let data3 = {
-//   id: 7,
-//   userName: "Nikzad Khan",
-//   userLocation: "Kabul, Afghanistan",
-//   isImg: true,
-//   videoLink: "",
-//   isVerified: true,
-//   likeCount: 2392,
-//   userProfile: "./images/mujtabaProfile.jpeg",
-//   userPostImg: localStorage.getItem("imgUrl"),
-//   postDes: dsecriptionData.value,
-// };
-// cardData.push(data3);
-// document.getElementById("btn").addEventListener("click", () => {
-//   alert();
-//   console.log("hi");
-// });
-// const fileInput = document.querySelector("#files");
-
-// fileInput.addEventListener("change", () => {
-//   const reader = new FileReader();
-//   reader.addEventListener("load", () => {
-//     localStorage.setItem("imgUrl", reader.result);
-//   });
-//   reader.readAsDataURL(fileInput.files[0]);
-// });
-
-// ///////////////
 for (let i = 0; i < cardData.length; i++) {
   document.querySelector(".post-list").innerHTML += `<div class="post-card">
 <div class="card-top">

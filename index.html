@@ -92,8 +92,12 @@
                 />Photo/video</span
               ></label
             >
-            <input id="files" accept="video/*,image/*" type="file" />
-
+            <input
+              id="files"
+              accept="video/*,image/*"
+              type="file"
+              onchange="uploadImage()"
+            />
             <span class="feeling"
               ><i class="fa-regular fa-face-smile"></i>Feeling</span
             >
@@ -114,11 +118,8 @@
         <div class="link text">Settings</div>
       </div>
     </div>
-    <!-- <img src="" id="img_url" alt="" /> 
-    <video controls>
-      <source id="vedio_url" src="" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>  -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>
