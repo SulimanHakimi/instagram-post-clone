@@ -7,8 +7,8 @@
   user-select: none;
 }
 body {
-  background-color: blueviolet;
   position: relative;
+  background-color: yellowgreen;
 }
 .continair {
   display: flex;
@@ -58,7 +58,7 @@ i {
 }
 .post-card {
   height: fit-content;
-  width: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
