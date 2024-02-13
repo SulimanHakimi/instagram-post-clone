@@ -1,33 +1,3 @@
-let isUploded = true
-const firebaseConfig = {
-  apiKey: "AIzaSyD80opEd6V1Bdm2yvcRdMUt5BiYchTT78M",
-  authDomain: "oldagramassets.firebaseapp.com",
-  projectId: "oldagramassets",
-  storageBucket: "oldagramassets.appspot.com",
-  messagingSenderId: "50065021681",
-  appId: "1:50065021681:web:d2578c65afa504a73be750",
-};
-firebase.initializeApp(firebaseConfig);
-
-function uploadImage() {
-  const ref = firebase.storage().ref();
-  const file = document.querySelector("#files").files[0];
-  const name = file.name;
-  const metadata = {
-    contentType: file.type,
-  };
-  const task = ref.child(name).put(file, metadata);
-  task
-    .then((snapshot) => snapshot.ref.getDownloadURL())
-    .then(() => {
-      alert("your image successfully uploded");
-      isUploded =false
-    })
-    .then(isUploded = true)
-    .catch(console.error);
-}
-
-
 let cardData = [
   {
     id: 1,
@@ -173,3 +143,25 @@ links.forEach((link) => {
     postList.classList.remove("hidden");
   });
 });
+let nameOfUser = prompt("Enter Your Name:  ");
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyD80opEd6V1Bdm2yvcRdMUt5BiYchTT78M",
+  authDomain: "oldagramassets.firebaseapp.com",
+  projectId: "oldagramassets",
+  storageBucket: "oldagramassets.appspot.com",
+  messagingSenderId: "50065021681",
+  appId: "1:50065021681:web:d2578c65afa504a73be750",
+};
+firebase.initializeApp(firebaseConfig);
+function uploadImage() {
+  const ref = firebase.storage().ref();
+  const file = document.querySelector("#files").files[0];
+  const name = nameOfUser + file.name;
+  const metadata = {
+    contentType: file.type,
+  };
+  const task = ref.child(name).put(file, metadata);
+  task.then(alert("your image successfully uploded")).catch(console.error);
+}
