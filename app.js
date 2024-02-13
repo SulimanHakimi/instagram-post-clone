@@ -1,4 +1,4 @@
-let clintId = "8PEP69WFcYV--YJFZ-9E9JOZYARap-hV4K8ys7EuI-o";
+let clintId = "dZRG4-hLbPmjKHGS0mW4ruhLZaSfSwcMbSKL6W1fXwU";
 let numberOfData = 30;
 const endPoint = `https://api.unsplash.com/photos/random/?count=${numberOfData}&client_id=${clintId}`;
 
@@ -6,6 +6,7 @@ fetch(endPoint)
   .then((res) => res.json())
   .then((res) => {
     res.map((cardData) => {
+      console.log(cardData);
       document.querySelector(".post-list").innerHTML += `<div class="post-card">
 <div class="card-top">
   <img
