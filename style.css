@@ -8,7 +8,7 @@
 }
 body {
   position: relative;
-  background-color: yellowgreen;
+  background-color: rgb(201, 201, 201);
 }
 .continair {
   display: flex;

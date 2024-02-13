@@ -1,5 +1,6 @@
 let clintId = "8PEP69WFcYV--YJFZ-9E9JOZYARap-hV4K8ys7EuI-o";
-const endPoint = `https://api.unsplash.com/photos/random/?count=1000&client_id=${clintId}`;
+let numberOfData = 30;
+const endPoint = `https://api.unsplash.com/photos/random/?count=${numberOfData}&client_id=${clintId}`;
 
 fetch(endPoint)
   .then((res) => res.json())
@@ -88,4 +89,3 @@ function uploadImage() {
   const task = ref.child(name).put(file, metadata);
   task.then(alert("your image successfully uploded")).catch(console.error);
 }
-
