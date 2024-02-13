@@ -198,8 +198,18 @@ main {
   text-align: center;
   height: 40px;
   width: 90%;
-  margin-left: 5%;
+  margin: 0px auto;
   cursor: pointer;
+}
+.login {
+  margin: 0px auto;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: cadetblue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }
 .hidden {
   display: none;

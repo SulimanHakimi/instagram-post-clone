@@ -1,3 +1,4 @@
+let isUploded = true
 const firebaseConfig = {
   apiKey: "AIzaSyD80opEd6V1Bdm2yvcRdMUt5BiYchTT78M",
   authDomain: "oldagramassets.firebaseapp.com",
@@ -7,6 +8,7 @@ const firebaseConfig = {
   appId: "1:50065021681:web:d2578c65afa504a73be750",
 };
 firebase.initializeApp(firebaseConfig);
+
 function uploadImage() {
   const ref = firebase.storage().ref();
   const file = document.querySelector("#files").files[0];
@@ -19,9 +21,12 @@ function uploadImage() {
     .then((snapshot) => snapshot.ref.getDownloadURL())
     .then(() => {
       alert("your image successfully uploded");
+      isUploded =false
     })
+    .then(isUploded = true)
     .catch(console.error);
 }
+
 
 let cardData = [
   {
