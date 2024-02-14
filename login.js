@@ -4,8 +4,7 @@ let password = document.getElementById("password");
 
 let phoneNumber = document.getElementById("phone");
 let btn = document.getElementById("loginBtn");
-let btn2 = document.getElementById("loginBtn2");
-
+let isLogin = false
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
 
 const firebaseConfig = {
@@ -30,8 +29,8 @@ import {
 const db = getDatabase();
 
 function AddData() {
-  set(ref(db, `accounts/`), {
-    uuid: {
+  set(ref(db, `accounts/${uuid}`), {
+      user: {
       name: name.value,
       lastName: lastName.value,
       phoneNumber: phoneNumber.value,
@@ -41,6 +40,7 @@ function AddData() {
   })
     .then(() => {
       window.location.href = "https://sulimanhakimi.github.io/instagram-post-clone/";
+      isLogin= true
     })
     .catch((error) => {
       console.log(error);
@@ -55,5 +55,11 @@ export default function getData() {
   });
 }
 btn.addEventListener("click", () => {
-  AddData();
+  if(isLogin==true) {
+    btn.setAttribute("disabled", "disabled");
+  }else{
+    AddData()
+  }
 });
+
+

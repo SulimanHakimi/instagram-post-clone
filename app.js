@@ -90,9 +90,10 @@ function uploadImage() {
   task.then(alert("your image successfully uploded")).catch(console.error);
 }
 let modal = document.getElementById("modal");
-setTimeout(()=>{
-modal.style.display = "flex"
-},1000)
-setTimeout(()=>{
-modal.style.display = "none"
-},7000)
+
+setTimeout(() => {
+  modal.style.display = "flex";
+}, 1000);
+setTimeout(() => {
+  modal.style.display = "none";
+}, 7000);
