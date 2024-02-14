@@ -1,6 +1,5 @@
 let name = document.getElementById("name");
 let lastName = document.getElementById("lastname");
-let userName = document.getElementById("username");
 let password = document.getElementById("password");
 
 let phoneNumber = document.getElementById("phone");
@@ -21,7 +20,7 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 let uuid = crypto.randomUUID().toString();
-// document.cookie = "id" + "=" + uuid;
+document.cookie = "id" + "=" + uuid;
 import {
   getDatabase,
   ref,
@@ -32,8 +31,7 @@ const db = getDatabase();
 
 function AddData() {
   set(ref(db, `accounts/`), {
-    user: {
-      userName: userName.value,
+    uuid: {
       name: name.value,
       lastName: lastName.value,
       phoneNumber: phoneNumber.value,
@@ -42,7 +40,7 @@ function AddData() {
     },
   })
     .then(() => {
-      window.location.href = "/";
+      window.location.href = "https://sulimanhakimi.github.io/instagram-post-clone/";
     })
     .catch((error) => {
       console.log(error);
