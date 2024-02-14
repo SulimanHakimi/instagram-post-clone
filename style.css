@@ -41,7 +41,7 @@ nav img {
 img {
   cursor: pointer;
 }
-.card-img img{
+.card-img img {
   width: 400px;
   object-fit: cover;
 }
@@ -210,6 +210,10 @@ main {
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+}
+.login a {
+  text-decoration: none;
+  color: white;
 }
 .hidden {
   display: none;
