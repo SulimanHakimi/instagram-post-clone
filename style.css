@@ -242,9 +242,6 @@ main {
   background-color: #65676b11;
 }
 @media only screen and (max-width: 600px) {
-  body {
-    overflow: hidden;
-  }
   .continair {
     width: 100%;
   }
