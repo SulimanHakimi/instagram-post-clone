@@ -41,9 +41,9 @@ nav img {
 img {
   cursor: pointer;
 }
-.card-img img,
-.card-img video {
+.card-img img{
   width: 400px;
+  object-fit: cover;
 }
 i {
   font-size: 25px;
